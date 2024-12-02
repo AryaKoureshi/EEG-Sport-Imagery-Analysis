@@ -44,7 +44,6 @@ The script performs the following tasks:
 ## Code Structure
 
 - **`analyze_eeg_data.py`**: Main script for processing EEG data. It performs data extraction, PSD computation, band power calculation, and generates topomaps.
-- **`requirements.txt`**: Python dependencies required for running the script.
 - **`data/`**: Directory where EEG `.set` files should be stored.
 - **`output/`**: Directory where results (plots, band powers) will be saved.
 - **`topomaps/`**: Directory where topomap images will be saved.
@@ -56,9 +55,8 @@ The code expects EEG data in the EEGLAB `.set` format with the following event m
 - '2' for the end of rest condition.
 - '3' for the start of task condition.
 - '4' for the end of task condition.
-- '5' for the baseline condition.
-
-Ensure that the event markers in your dataset match these labels.
+- '5' for the start of baseline condition.
+- '6' for the end of baseline condition.
 
 ## Results
 
